@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MM Multimarcas — Moda Masculina Premium em Jales</title>
+<meta name="description" content="MM Multimarcas: roupas masculinas das melhores marcas — Lacoste, Nike, Hugo Boss, Brooksfield e mais. Qualidade, estilo e entrega rápida." />
+<meta property="og:title" content="MM Multimarcas — Moda Masculina Premium" />
+<meta property="og:description" content="As melhores marcas com qualidade, estilo e entrega rápida." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { gold: '#d4af37' },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+        boxShadow: {
+          gold: '0 10px 40px -10px rgba(212,175,55,0.35)',
+          elegant: '0 20px 60px -20px rgba(0,0,0,0.6)',
+        },
+        animation: {
+          marquee: 'marquee 30s linear infinite',
+          'fade-up': 'fadeUp 1s ease both',
+        },
+        keyframes: {
+          marquee: { from: { transform: 'translateX(0)' }, to: { transform: 'translateX(-50%)' } },
+          fadeUp: { from: { opacity: 0, transform: 'translateY(30px)' }, to: { opacity: 1, transform: 'translateY(0)' } },
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0d0d0d; color:#fff; font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,h4 { font-family:'Playfair Display',serif; letter-spacing:-0.02em; font-weight:400; }
+  .bg-gradient-gold { background: linear-gradient(135deg,#d4af37 0%,#f5d67a 45%,#b8892a 100%); }
+  .text-gradient-gold { background: linear-gradient(135deg,#d4af37 0%,#f5d67a 45%,#b8892a 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+  .reveal { opacity:0; transform:translateY(24px); transition:opacity .9s ease, transform .9s ease; }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed inset-x-0 top-0 z-50 py-5 transition-all duration-500">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
+    <a href="#inicio" class="flex items-center gap-3">
+      <img src="images/logo.jpg" alt="MM Multimarcas" class="h-11 w-11 rounded-full object-cover ring-1 ring-gold/40" />
+      <div class="leading-tight">
+        <div class="font-display text-lg text-gold tracking-wide">MM</div>
+        <div class="text-[10px] uppercase tracking-[0.3em] text-white/70">Multimarcas</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-9">
+      <a href="#inicio" class="text-sm text-white/80 hover:text-gold transition">Início</a>
+      <a href="#sobre" class="text-sm text-white/80 hover:text-gold transition">Sobre</a>
+      <a href="#produtos" class="text-sm text-white/80 hover:text-gold transition">Produtos</a>
+      <a href="#marcas" class="text-sm text-white/80 hover:text-gold transition">Marcas</a>
+      <a href="#contato" class="text-sm text-white/80 hover:text-gold transition">Contato</a>
+    </nav>
+    <a href="#contato" class="hidden md:inline-flex rounded-full border border-gold/60 px-5 py-2 text-sm text-gold hover:bg-gold hover:text-[#0d0d0d] transition">Fale Conosco</a>
+    <button id="menuBtn" aria-label="Menu" class="md:hidden text-gold">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden bg-[#0d0d0d]/95 border-t border-white/5">
+    <nav class="flex flex-col px-6 py-4">
+      <a href="#inicio" class="py-3 text-white/85 border-b border-white/5">Início</a>
+      <a href="#sobre" class="py-3 text-white/85 border-b border-white/5">Sobre</a>
+      <a href="#produtos" class="py-3 text-white/85 border-b border-white/5">Produtos</a>
+      <a href="#marcas" class="py-3 text-white/85 border-b border-white/5">Marcas</a>
+      <a href="#contato" class="py-3 text-white/85">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="relative min-h-screen overflow-hidden">
+  <div class="absolute inset-0" style="background: radial-gradient(ellipse at top, rgba(212,175,55,0.18), transparent 55%), radial-gradient(ellipse at bottom, rgba(212,175,55,0.08), transparent 60%), linear-gradient(180deg,#0d0d0d,#111,#0d0d0d);"></div>
+  <div class="relative mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 pt-28 pb-16 text-center">
+    <div class="relative mb-10 animate-fade-up">
+      <div class="absolute -inset-6 rounded-full bg-gold/20 blur-2xl"></div>
+      <img src="images/logo.jpg" alt="MM Multimarcas" class="relative h-44 w-44 md:h-56 md:w-56 rounded-full object-cover ring-2 ring-gold/60 shadow-gold" />
+    </div>
+    <p class="mb-4 text-xs uppercase tracking-[0.5em] text-gold">Moda Masculina Premium</p>
+    <h1 class="max-w-4xl text-5xl md:text-7xl leading-[1.05]">Seu estilo <span class="text-gradient-gold italic">começa aqui.</span></h1>
+    <p class="mt-6 max-w-xl text-base md:text-lg text-white/70">As melhores marcas com qualidade, estilo e entrega rápida.</p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+      <a href="#produtos" class="rounded-full bg-gradient-gold px-9 py-4 text-sm font-semibold uppercase tracking-widest text-[#0d0d0d] shadow-gold hover:scale-105 transition">Ver Coleção</a>
+      <a href="#contato" class="rounded-full border border-white/20 px-9 py-4 text-sm uppercase tracking-widest text-white/90 hover:border-gold hover:text-gold transition">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER -->
+<section class="border-y border-white/5 bg-gradient-to-r from-[#0a0a0a] via-[#141414] to-[#0a0a0a] py-14 md:py-20 text-center">
+  <span class="text-[10px] uppercase tracking-[0.5em] text-gold">Lançamento</span>
+  <h3 class="mt-3 text-3xl md:text-5xl">Nova Coleção Inverno</h3>
+  <p class="mt-3 text-white/60">Peças exclusivas das melhores marcas</p>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-24 md:py-32">
+  <div class="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 items-center gap-14 px-6">
+    <div class="reveal relative">
+      <div class="absolute -inset-8 rounded-full bg-gold/10 blur-3xl"></div>
+      <div class="relative aspect-square overflow-hidden rounded-2xl border border-gold/20 bg-[#111]">
+        <img src="images/logo.jpg" alt="MM" class="h-full w-full object-cover" />
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="mb-3 text-xs uppercase tracking-[0.5em] text-gold">Sobre a MM</p>
+      <h2 class="text-4xl md:text-5xl leading-tight">Elegância e confiança <span class="text-gradient-gold italic">em cada peça.</span></h2>
+      <p class="mt-6 text-lg text-white/70">Na <span class="text-gold">MM Multimarcas</span> você encontra roupas masculinas das principais marcas, sempre com qualidade, preço justo e atendimento de confiança.</p>
+      <p class="mt-4 text-white/60">Selecionamos criteriosamente cada peça para oferecer uma experiência de compra sofisticada, digna das grandes vitrines do mundo — sem sair da sua cidade.</p>
+      <div class="mt-8 flex flex-wrap gap-8">
+        <div><div class="font-display text-4xl text-gold">7+</div><div class="text-xs uppercase tracking-widest text-white/50">Marcas Premium</div></div>
+        <div><div class="font-display text-4xl text-gold">1000+</div><div class="text-xs uppercase tracking-widest text-white/50">Clientes Felizes</div></div>
+        <div><div class="font-display text-4xl text-gold">5★</div><div class="text-xs uppercase tracking-widest text-white/50">Avaliação</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="py-24 md:py-32">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mb-16 text-center reveal">
+      <p class="mb-3 text-xs uppercase tracking-[0.5em] text-gold">Seleção Exclusiva</p>
+      <h2 class="text-4xl md:text-5xl">Produtos em <span class="text-gradient-gold italic">Destaque</span></h2>
+      <p class="mx-auto mt-4 max-w-lg text-white/60">Peças escolhidas a dedo das marcas mais desejadas do momento.</p>
+    </div>
+    <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+  </div>
+</section>
+
+<!-- MARCAS -->
+<section id="marcas" class="border-y border-white/5 bg-[#0a0a0a] py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <p class="mb-10 text-center text-xs uppercase tracking-[0.5em] text-gold">Marcas Parceiras</p>
+    <div class="relative overflow-hidden">
+      <div class="flex w-max animate-marquee gap-16" id="brandsTrack"></div>
+      <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent"></div>
+      <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mb-14 text-center reveal">
+      <p class="mb-3 text-xs uppercase tracking-[0.5em] text-gold">Diferenciais</p>
+      <h2 class="text-4xl md:text-5xl">Por que escolher a <span class="text-gradient-gold italic">MM</span></h2>
+    </div>
+    <div id="featuresGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5"></div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="relative overflow-hidden py-24 md:py-32">
+  <div class="absolute inset-0" style="background: radial-gradient(ellipse at center, rgba(212,175,55,0.15), transparent 60%);"></div>
+  <div class="relative mx-auto max-w-4xl px-6 text-center reveal">
+    <p class="mb-3 text-xs uppercase tracking-[0.5em] text-gold">Fale Conosco</p>
+    <h2 class="text-4xl md:text-6xl">Vamos <span class="text-gradient-gold italic">conversar?</span></h2>
+    <p class="mx-auto mt-5 max-w-lg text-white/70">Chame no WhatsApp e receba atendimento personalizado. Fotos, medidas, valores e frete em minutos.</p>
+    <a href="https://wa.me/5517999999999?text=Olá!%20Vim%20pelo%20site%20e%20quero%20conhecer%20as%20peças." target="_blank" rel="noreferrer" class="mt-10 inline-flex items-center gap-3 rounded-full bg-gradient-gold px-10 py-5 text-sm font-semibold uppercase tracking-widest text-[#0d0d0d] shadow-gold hover:scale-105 transition">
+      <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M20.52 3.48A11.94 11.94 0 0012.01 0C5.39 0 .01 5.38.01 12c0 2.12.56 4.18 1.62 6L0 24l6.18-1.62A11.96 11.96 0 0012 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.21-3.48-8.52z"/></svg>
+      Chamar no WhatsApp
+    </a>
+    <p class="mt-6 text-white/50 text-sm">Ou visite nossa loja em Jales — SP</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/5 bg-[#080808] py-12">
+  <div class="mx-auto flex max-w-7xl flex-col md:flex-row items-center justify-between gap-6 px-6">
+    <div class="flex items-center gap-3">
+      <img src="images/logo.jpg" alt="MM" class="h-10 w-10 rounded-full object-cover ring-1 ring-gold/40" />
+      <div>
+        <div class="font-display text-gold">MM Multimarcas</div>
+        <div class="text-[10px] uppercase tracking-[0.3em] text-white/50">Moda Masculina Premium</div>
+      </div>
+    </div>
+    <div class="flex gap-4">
+      <a href="https://www.instagram.com/mm____multimarcas?igsh=MWRtb2Z3ejdseWM2OQ==" target="_blank" rel="noreferrer" aria-label="Instagram" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/70 hover:border-gold hover:text-gold transition">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+      <a href="https://wa.me/5517999999999" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/70 hover:border-gold hover:text-gold transition">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M20.52 3.48A11.94 11.94 0 0012.01 0C5.39 0 .01 5.38.01 12c0 2.12.56 4.18 1.62 6L0 24l6.18-1.62A11.96 11.96 0 0012 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.21-3.48-8.52z"/></svg>
+      </a>
+    </div>
+    <p class="text-xs text-white/40">© <span id="year"></span> MM Multimarcas. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5517999999999" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-gold text-[#0d0d0d] shadow-gold hover:scale-110 transition">
+  <svg viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7"><path d="M20.52 3.48A11.94 11.94 0 0012.01 0C5.39 0 .01 5.38.01 12c0 2.12.56 4.18 1.62 6L0 24l6.18-1.62A11.96 11.96 0 0012 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.21-3.48-8.52z"/></svg>
+</a>
+
+<script>
+  const WHATSAPP = "5517999999999";
+  const products = [
+    { img: "images/p1.jpg", name: "Moletom Premium", brand: "Brooksfield", price: "R$ 299,90" },
+    { img: "images/p2.jpg", name: "Camiseta Oversized", brand: "Multimarcas", price: "R$ 129,90" },
+    { img: "images/p3.jpg", name: "Short Sport", brand: "Nike", price: "R$ 179,90" },
+    { img: "images/p4.jpg", name: "Short Beachwear", brand: "Hugo Boss", price: "R$ 349,90" },
+    { img: "images/p5.jpg", name: "Camiseta Dri-Fit", brand: "Mizuno", price: "R$ 159,90" },
+    { img: "images/p6.jpg", name: "Conjunto Esportivo", brand: "Lacoste", price: "R$ 459,90" },
+    { img: "images/calca-jeans.jpg", name: "Calça Jeans", brand: "Multimarcas", price: "R$ 100,00" },
+  ];
+  document.getElementById('productsGrid').innerHTML = products.map(p => `
+    <article class="reveal group overflow-hidden rounded-2xl border border-white/5 bg-[#141414] hover:-translate-y-2 hover:border-gold/30 hover:shadow-elegant transition-all duration-500">
+      <div class="relative aspect-[4/5] overflow-hidden bg-[#1a1a1a]">
+        <img src="${p.img}" alt="${p.name}" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent opacity-70"></div>
+        <span class="absolute left-4 top-4 rounded-full border border-gold/40 bg-black/50 px-3 py-1 text-[10px] uppercase tracking-widest text-gold backdrop-blur">${p.brand}</span>
+      </div>
+      <div class="flex items-end justify-between gap-4 p-6">
+        <div><h3 class="font-display text-xl">${p.name}</h3><p class="mt-1 text-lg text-gold">${p.price}</p></div>
+        <a href="https://wa.me/${WHATSAPP}?text=Olá!%20Tenho%20interesse%20no%20${encodeURIComponent(p.name)}" target="_blank" rel="noreferrer" class="rounded-full bg-gradient-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-[#0d0d0d] hover:shadow-gold hover:scale-105 transition">Comprar</a>
+      </div>
+    </article>
+  `).join('');
+
+  const brands = ["Lacoste","Nike","Adidas","Tommy Hilfiger","Calvin Klein","Reserva","Brooksfield","Hugo Boss"];
+  document.getElementById('brandsTrack').innerHTML = [...brands, ...brands].map(b => `<span class="font-display text-3xl md:text-4xl text-white/40 hover:text-gold whitespace-nowrap transition">${b}</span>`).join('');
+
+  const features = [
+    { icon:"🚚", title:"Entrega Grátis em Jales", desc:"Frete por nossa conta na região." },
+    { icon:"🇧🇷", title:"Enviamos para todo o Brasil", desc:"Do Oiapoque ao Chuí, com rastreio." },
+    { icon:"🔒", title:"Compra Segura", desc:"Pagamento protegido e criptografado." },
+    { icon:"⭐", title:"Produtos de Qualidade", desc:"Somente marcas selecionadas." },
+    { icon:"💬", title:"Atendimento Rápido", desc:"Suporte no WhatsApp em minutos." },
+  ];
+  document.getElementById('featuresGrid').innerHTML = features.map(f => `
+    <div class="reveal group rounded-2xl border border-white/5 bg-gradient-to-b from-[#141414] to-[#0d0d0d] p-6 text-center hover:-translate-y-1 hover:border-gold/40 hover:shadow-gold transition-all duration-500">
+      <div class="mb-4 text-4xl group-hover:scale-110 transition-transform">${f.icon}</div>
+      <h4 class="font-display text-lg text-gold">${f.title}</h4>
+      <p class="mt-2 text-sm text-white/60">${f.desc}</p>
+    </div>
+  `).join('');
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Navbar scroll
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.classList.add('bg-[#0d0d0d]/95','backdrop-blur-md','border-b','border-white/5','py-3'), nav.classList.remove('py-5');
+    else nav.classList.remove('bg-[#0d0d0d]/95','backdrop-blur-md','border-b','border-white/5','py-3'), nav.classList.add('py-5');
+  });
+
+  // Menu mobile
+  document.getElementById('menuBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.toggle('hidden'));
+  document.querySelectorAll('#mobileMenu a').forEach(a => a.addEventListener('click', () => document.getElementById('mobileMenu').classList.add('hidden')));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting && (e.target.classList.add('visible'), io.unobserve(e.target))), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
